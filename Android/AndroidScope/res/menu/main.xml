@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_trigger"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/menu_trigger"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu_zoom"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_zoom"
+        android:title="@string/menu_zoom"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu_acdc"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/menu_dc"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu_source"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/menu_source"
+        android:icon="@android:drawable/ic_menu_share"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu_pause"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/menu_pause"
+        android:visible="true"/>
+        <item
+        android:id="@+id/menu_fft"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/menu_fft"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/menu_settings"/>
+
+</menu>

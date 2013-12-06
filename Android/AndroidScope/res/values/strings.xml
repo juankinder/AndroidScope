@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidScope</string>
+    
+    <string name="pref_buffer">Buffer</string>
+    <string name="pref_display">Visualización</string>
+    <string name="pref_usb">USB</string>
+    <string name="pref_generator">Generador Interno</string>
+    
+    <string name="pref_buffer_size">Tamaño del buffer</string>
+    <string name="pref_init_samples_display">Cantidad de muestras a mostrar inicialmente</string>
+    <string name="pref_refresh_rate">Tiempo de refresco en milisegundos</string>
+    <string name="pref_round">Suavizar señal: Radio de circulos</string>
+    
+    <string name="pref_generator_amplitude">Amplitud de la señal generada</string>
+    <string name="pref_generator_samples">Muestras a generar</string>
+    <string name="pref_generator_rate">Tiempo entre generacion en milisegundos</string>
+    
+    <string name="pref_usb_rate">Tiempo entre lecturas del puerto USB en milisegundos</string>
+    <string name="pref_usb_bytes_2_read">Cantidad de bytes a leer</string>
+    
+    <string name="menu_trigger">Trigger</string>
+    <string name="menu_zoom">Zoom</string>
+    <string name="menu_dc">DC</string>
+    <string name="menu_source">Fuente</string>
+    <string name="menu_pause">Pausa</string>
+    <string name="menu_fft">FFT</string>
+    <string name="menu_settings">Preferencias</string>
+    
+    <string name="menu_zoom_1">x0.1</string>
+    <string name="menu_zoom_2">x0.2</string>
+    <string name="menu_zoom_4">x0.4</string>
+    <string name="menu_zoom_5">x0.5</string>
+    <string name="menu_zoom_8">x0.8</string>
+    <string name="menu_zoom_10">x1</string>
+    <string name="menu_zoom_16">x1.6</string>
+    <string name="menu_zoom_32">x3.2</string>
+    
+    <string name="menu_trigger_up">Ascendente</string>
+    <string name="menu_trigger_down">Descendente</string>
+    
+    <string name="menu_source_usb">USB</string>
+    <string name="menu_source_arduino">Arduino</string>
+    <string name="menu_source_internal">Generador Interno</string>
+     <string name="menu_source_sound">Microfono</string>
+
+</resources>

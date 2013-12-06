@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_buffer" >
+        <EditTextPreference
+            android:defaultValue="10000"
+            android:key="prefBufferSize"
+            android:title="@string/pref_buffer_size" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_display" >
+        <EditTextPreference
+            android:defaultValue="200"
+            android:key="prefInitSamplesToDisplay"
+            android:title="@string/pref_init_samples_display" />
+        <EditTextPreference
+            android:defaultValue="50"
+            android:key="prefRefreshRate"
+            android:title="@string/pref_refresh_rate" />
+        <EditTextPreference
+            android:defaultValue="50"
+            android:key="prefRound"
+            android:title="@string/pref_refresh_rate" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_usb" >
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="prefUSBRate"
+            android:title="@string/pref_usb_rate" />
+        <EditTextPreference
+            android:defaultValue="128"
+            android:key="prefUSBBytes2Read"
+            android:title="@string/pref_usb_bytes_2_read" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_generator" >
+        <EditTextPreference
+            android:defaultValue="5"
+            android:key="prefGeneratorAmplitude"
+            android:title="@string/pref_generator_amplitude" />
+        <EditTextPreference
+            android:defaultValue="128"
+            android:key="prefGeneratorSamples"
+            android:title="@string/pref_generator_samples" />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="prefGeneratorRate"
+            android:title="@string/pref_generator_rate" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

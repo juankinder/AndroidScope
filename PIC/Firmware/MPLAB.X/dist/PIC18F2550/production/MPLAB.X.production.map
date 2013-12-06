@@ -1,0 +1,1066 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Tue Dec  3 01:35:14 2013
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+    HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
+     LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
+    REMAPPED_RESET_VECTOR       code   0x001000    program   0x000006
+REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x001008    program   0x000006
+REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
+                   .cinit    romdata   0x00102a    program   0x00000e
+       .code_usb_device.o       code   0x001038    program   0x000d0c
+             .code_main.o       code   0x001d44    program   0x0004a4
+ .code_usb_function_cdc.o       code   0x0021e8    program   0x0003ea
+.romdata_usb_descriptors.o    romdata   0x0025d2    program   0x0000c9
+         .idata_c018i.o_i    romdata   0x00269b    program   0x000000
+        .romdata___init.o    romdata   0x00269b    program   0x000000
+        .idata___init.o_i    romdata   0x00269b    program   0x000000
+         .romdata_c018i.o    romdata   0x00269b    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x00269b    program   0x000000
+          .romdata_main.o    romdata   0x00269b    program   0x000000
+.romdata_usb_function_cdc.o    romdata   0x00269b    program   0x000000
+    .idata_usb_device.o_i    romdata   0x00269b    program   0x000000
+    .romdata_usb_device.o    romdata   0x00269b    program   0x000000
+.idata_usb_function_cdc.o_i    romdata   0x00269b    program   0x000000
+  .code_usb_descriptors.o       code   0x00269c    program   0x000000
+            .code_c018i.o       code   0x00269c    program   0x000000
+               _cinit_scn       code   0x00269c    program   0x00009e
+                   STRING       code   0x00273a    program   0x000034
+                    .code       code   0x00276e    program   0x000020
+             _startup_scn       code   0x00278e    program   0x00001c
+           .code___init.o       code   0x0027aa    program   0x000002
+          .idata_main.o_i    romdata   0x0027ac    program   0x000002
+    .config_300000_main.o    romdata   0x300000    program   0x000001
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+    .config_300008_main.o    romdata   0x300008    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x00000b
+                 .tmpdata      udata   0x00000b       data   0x000003
+      .udata_usb_device.o      udata   0x000060       data   0x000035
+.udata_usb_function_cdc.o      udata   0x000095       data   0x000019
+           .udata_c018i.o      udata   0x0000ae       data   0x00000a
+            .idata_main.o      idata   0x0000b8       data   0x000002
+          .idata___init.o      idata   0x0000ba       data   0x000000
+          .udata___init.o      udata   0x0000ba       data   0x000000
+            .udata_main.o      udata   0x0000ba       data   0x000000
+.idata_usb_function_cdc.o      idata   0x0000ba       data   0x000000
+      .idata_usb_device.o      idata   0x0000ba       data   0x000000
+ .idata_usb_descriptors.o      idata   0x0000ba       data   0x000000
+ .udata_usb_descriptors.o      udata   0x0000ba       data   0x000000
+           .idata_c018i.o      idata   0x0000ba       data   0x000000
+                   .stack      udata   0x000100       data   0x000100
+                  BIGDATA      udata   0x000200       data   0x000042
+                  USB_BDT      udata   0x000400       data   0x000040
+            USB_VARIABLES      udata   0x000500       data   0x000091
+                SMALLDATA      udata   0x0007e0       data   0x000004
+            SFR_UNBANKED0      udata   0x000f66       data   0x00009a
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x00000d      
+                            0x000018    0x00001d      
+                            0x001000    0x001005      
+                            0x001008    0x00100d      
+                            0x001018    0x00101d      
+                            0x00102a    0x00269a      
+                            0x00269c    0x0027ad      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x300008      
+            6062 out of 33048 program addresses used, program memory utilization is 18%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+           BlinkUSBStatus   0x001ed4    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                CDCInitEP   0x002284    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+             CDCTxService   0x002426    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                 High_ISR   0x000008    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+         InitializeSystem   0x001e70    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                  Low_ISR   0x000018    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                ProcessIO   0x001eac    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+        Remapped_High_ISR   0x001008    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+         Remapped_Low_ISR   0x001018    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                 SPI_Init   0x002008    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                 SendData   0x001f52    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       USBCBCheckOtherReq   0x0020fc    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+        USBCBErrorHandler   0x0020fa    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+              USBCBInitEP   0x002102    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+          USBCBSendResume   0x002106    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+    USBCBStdSetDscHandler   0x002100    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+             USBCBSuspend   0x0020f4    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+     USBCBWakeFromSuspend   0x0020f6    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+        USBCB_SOF_Handler   0x0020f8    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       USBCDCEventHandler   0x0022ca    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+              USBCancelIO   0x00131e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+       USBCheckCDCRequest   0x0021e8    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+       USBCheckStdRequest   0x001910    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+     USBConfigureEndpoint   0x00140e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+  USBCtrlEPAllowDataStage   0x0013d0    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBCtrlEPAllowStatusStage   0x001384    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+         USBCtrlEPService   0x0017ba    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+ USBCtrlEPServiceComplete   0x00146a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBCtrlTrfInHandler   0x00189c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+     USBCtrlTrfOutHandler   0x00187e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBCtrlTrfRxService   0x001544    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+   USBCtrlTrfSetupHandler   0x001848    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBCtrlTrfTxService   0x0014c4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+          USBDeviceAttach   0x00135e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+          USBDeviceDetach   0x001354    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+            USBDeviceInit   0x001038    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+           USBDeviceTasks   0x0010fc    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+        USBEnableEndpoint   0x001218    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+         USBStallEndpoint   0x0012ec    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+          USBStallHandler   0x00176e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+  USBStdFeatureReqHandler   0x0019b8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBStdGetDscHandler   0x00167e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+   USBStdGetStatusHandler   0x0016f8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBStdSetCfgHandler   0x00160c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+               USBSuspend   0x00178e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+     USBTransferOnePacket   0x001260    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+       USBWakeFromSuspend   0x0017a2    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+               USB_CD_Ptr   0x002693    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+               USB_SD_Ptr   0x002695    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00214e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+  YourHighPriorityISRCode   0x001d44    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+   YourLowPriorityISRCode   0x001dee    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+              _2jContinue   0x00275a    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x002764    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+     ___case_225_lbl00056   0x002054    program     static                          
+     ___case_226_lbl00057   0x002058    program     static                          
+     ___case_227_lbl00058   0x00205e    program     static                          
+     ___case_228_lbl00059   0x002064    program     static                          
+     ___case_229_lbl00060   0x00206a    program     static                          
+     ___case_230_lbl00061   0x002070    program     static                          
+     ___case_231_lbl00062   0x002076    program     static                          
+     ___case_232_lbl00063   0x00207c    program     static                          
+      ___default_lbl00064   0x002082    program     static                          
+       ___return_lbl00000   0x001004    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x0027a8    program     static                          
+       ___return_lbl00001   0x00100c    program     static                          
+       ___return_lbl00002   0x00101c    program     static                          
+       ___return_lbl00002   0x002738    program     static                          
+       ___return_lbl00003   0x00000c    program     static                          
+       ___return_lbl00004   0x00001c    program     static                          
+       ___return_lbl00054   0x0020b6    program     static                          
+   ___switchexit_lbl00055   0x002086    program     static                          
+        ___while_lbl00065   0x00208c    program     static                          
+        ___while_lbl00066   0x002094    program     static                          
+        ___while_lbl00067   0x00209e    program     static                          
+        ___while_lbl00068   0x0020a6    program     static                          
+               __config_0   0x300000    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_1   0x300001    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_2   0x300002    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_3   0x300003    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_4   0x300005    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_5   0x300006    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_6   0x300008    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                   __init   0x0027aa    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+                   __pa_0   0x002508    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_0   0x001ae2    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_0   0x0021d6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                   __pa_1   0x001aea    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_1   0x002522    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_1   0x0021e0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                  __pa_10   0x0025a4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_10   0x001b48    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_11   0x001b58    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_11   0x0025b6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_12   0x001b62    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_12   0x0025c4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_13   0x001b76    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_14   0x001b8a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_15   0x001b96    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_16   0x001bb0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_17   0x001bbc    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_18   0x001bc8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_19   0x001bd0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_2   0x001af4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_2   0x002532    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_20   0x001bd8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_21   0x001be4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_22   0x001bf4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_23   0x001c04    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_24   0x001c12    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_25   0x001c20    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_26   0x001c2e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_27   0x001c3c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_28   0x001c4a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_29   0x001c54    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_3   0x002544    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_3   0x001afc    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_30   0x001c5e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_31   0x001c76    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_32   0x001c82    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_33   0x001c8a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_34   0x001c9e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_35   0x001cac    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_36   0x001cb6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_37   0x001cc0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_38   0x001cc6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_39   0x001cce    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_4   0x001b06    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_4   0x00255e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_40   0x001cda    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_41   0x001ce0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_42   0x001cee    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_43   0x001cfc    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_44   0x001d0a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_45   0x001d14    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_46   0x001d1e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_47   0x001d26    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_48   0x001d32    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_49   0x001d3c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_5   0x001b10    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_5   0x002568    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_6   0x002570    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_6   0x001b1a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_7   0x00257e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_7   0x001b22    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_8   0x00258c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_8   0x001b32    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_9   0x001b3c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_9   0x00259a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+              __tmplbl_24   0x001b1a    program     static                          
+              __tmplbl_33   0x001b1a    program     static                          
+              __tmplbl_36   0x001b1a    program     static                          
+              __tmplbl_37   0x001b1a    program     static                          
+              __tmplbl_38   0x001b1a    program     static                          
+            __zero_memory   0x00276e    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                _do_cinit   0x00269c    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   _reset   0x001000    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                 _startup   0x00278e    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                addResult   0x001e10    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                compare_l   0x002784    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+        configDescriptor1   0x0025e4    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                copy_loop   0x00270e    program     static                          
+            copy_one_byte   0x002714    program     static                          
+               device_dsc   0x0025d2    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                     done   0x002738    program     static                          
+             done_copying   0x002722    program     static                          
+             getsUSBUSART   0x002306    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                     jEnd   0x00276c    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                    jLoop   0x00274e    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                     loop   0x00279e    program     static                          
+                   loop_h   0x00277c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   loop_l   0x002786    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     main   0x001e2e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                   memset   0x00273a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+       processUsbCommands   0x001f92    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+              putUSBUSART   0x002384    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+            putrsUSBUSART   0x0023e2    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+             putsUSBUSART   0x0023a0    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                    sd000   0x002627    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                    sd001   0x00262b    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                    sd002   0x00265f    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+         setAmplifierGain   0x002022    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+            setBufferSize   0x0020ca    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                     test   0x0026b6    program     static                          
+               zero_block   0x00277c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      BDT   0x000400       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BaudRateGen   0x0000a2       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+       BothEP0OutUOWNsSet   0x000088       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+          CDCDataInHandle   0x00009f       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+         CDCDataOutHandle   0x00009d       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                    CMCON   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CtrlTrfData   0x000438       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     GAIN   0x0007e3       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+             RemoteWakeup   0x000084       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                     SIGN   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 SetupPkt   0x000430       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TMR_LOW   0x0007e2       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UFRML   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIE   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIR   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+   USBActiveConfiguration   0x000061       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+    USBAlternateInterface   0x000062       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+        USBBusIsSuspended   0x000085       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBDeferINDataStagePackets   0x000093       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBDeferOUTDataStagePackets   0x000094       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBDeferStatusStagePacket   0x000090       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+           USBDeviceState   0x000060       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBStatusStageEnabledFlag1   0x000091       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBStatusStageEnabledFlag2   0x000092       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBStatusStageTimeoutCounter   0x00008f       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                    USTAT   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                USTATcopy   0x000086       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   WDTCON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                __FPFLAGS   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __tmp_0   0x00000b       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __tmp_0   0x00000b       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                  __tmp_0   0x00000b       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+               buffer_out   0x000200       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+           buffer_pointer   0x0007e0       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+              cdc_data_rx   0x000540       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+              cdc_data_tx   0x000500       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+             cdc_mem_type   0x00009c       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+               cdc_notice   0x000587       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+               cdc_rx_len   0x000095       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+            cdc_trf_state   0x000096       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+               cdc_tx_len   0x00009b       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+     controlTransferState   0x000075       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+    control_signal_bitmap   0x0000a1       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                curr_byte   0x0000b1       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x0000b3       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x0000b5       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+              delay_count   0x000240       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+dummy_encapsulated_cmd_response   0x0000a6       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+          endpoint_number   0x000087       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+               ep_data_in   0x000089       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              ep_data_out   0x00008c       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  inPipes   0x000076       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                led_count   0x0000b8       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+              line_coding   0x000580       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                 outPipes   0x00007b       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+   pBDTEntryEP0OutCurrent   0x000064       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      pBDTEntryEP0OutNext   0x000066       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              pBDTEntryIn   0x00006e       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+             pBDTEntryOut   0x000068       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  pCDCDst   0x000099       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  pCDCSrc   0x000097       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                     pDst   0x000082       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                     prom   0x0000ae       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+        shortPacketStatus   0x000074       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                 High_ISR   0x000008    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       ___return_lbl00003   0x00000c    program     static                          
+                  Low_ISR   0x000018    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       ___return_lbl00004   0x00001c    program     static                          
+                   _reset   0x001000    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       ___return_lbl00000   0x001004    program     static                          
+        Remapped_High_ISR   0x001008    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       ___return_lbl00001   0x00100c    program     static                          
+         Remapped_Low_ISR   0x001018    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       ___return_lbl00002   0x00101c    program     static                          
+            USBDeviceInit   0x001038    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+           USBDeviceTasks   0x0010fc    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+        USBEnableEndpoint   0x001218    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+     USBTransferOnePacket   0x001260    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+         USBStallEndpoint   0x0012ec    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              USBCancelIO   0x00131e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+          USBDeviceDetach   0x001354    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+          USBDeviceAttach   0x00135e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBCtrlEPAllowStatusStage   0x001384    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+  USBCtrlEPAllowDataStage   0x0013d0    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+     USBConfigureEndpoint   0x00140e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+ USBCtrlEPServiceComplete   0x00146a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBCtrlTrfTxService   0x0014c4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBCtrlTrfRxService   0x001544    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBStdSetCfgHandler   0x00160c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBStdGetDscHandler   0x00167e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+   USBStdGetStatusHandler   0x0016f8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+          USBStallHandler   0x00176e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+               USBSuspend   0x00178e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+       USBWakeFromSuspend   0x0017a2    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+         USBCtrlEPService   0x0017ba    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+   USBCtrlTrfSetupHandler   0x001848    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+     USBCtrlTrfOutHandler   0x00187e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      USBCtrlTrfInHandler   0x00189c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+       USBCheckStdRequest   0x001910    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+  USBStdFeatureReqHandler   0x0019b8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_0   0x001ae2    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_1   0x001aea    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_2   0x001af4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_3   0x001afc    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_4   0x001b06    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_5   0x001b10    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              __tmplbl_24   0x001b1a    program     static                          
+                   __pa_6   0x001b1a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              __tmplbl_38   0x001b1a    program     static                          
+              __tmplbl_37   0x001b1a    program     static                          
+              __tmplbl_36   0x001b1a    program     static                          
+              __tmplbl_33   0x001b1a    program     static                          
+                   __pa_7   0x001b22    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_8   0x001b32    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                   __pa_9   0x001b3c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_10   0x001b48    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_11   0x001b58    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_12   0x001b62    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_13   0x001b76    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_14   0x001b8a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_15   0x001b96    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_16   0x001bb0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_17   0x001bbc    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_18   0x001bc8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_19   0x001bd0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_20   0x001bd8    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_21   0x001be4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_22   0x001bf4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_23   0x001c04    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_24   0x001c12    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_25   0x001c20    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_26   0x001c2e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_27   0x001c3c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_28   0x001c4a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_29   0x001c54    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_30   0x001c5e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_31   0x001c76    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_32   0x001c82    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_33   0x001c8a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_34   0x001c9e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_35   0x001cac    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_36   0x001cb6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_37   0x001cc0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_38   0x001cc6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_39   0x001cce    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_40   0x001cda    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_41   0x001ce0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_42   0x001cee    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_43   0x001cfc    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_44   0x001d0a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_45   0x001d14    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_46   0x001d1e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_47   0x001d26    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_48   0x001d32    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  __pa_49   0x001d3c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+  YourHighPriorityISRCode   0x001d44    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+   YourLowPriorityISRCode   0x001dee    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                addResult   0x001e10    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                     main   0x001e2e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+         InitializeSystem   0x001e70    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                ProcessIO   0x001eac    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+           BlinkUSBStatus   0x001ed4    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                 SendData   0x001f52    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       processUsbCommands   0x001f92    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                 SPI_Init   0x002008    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+         setAmplifierGain   0x002022    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+     ___case_225_lbl00056   0x002054    program     static                          
+     ___case_226_lbl00057   0x002058    program     static                          
+     ___case_227_lbl00058   0x00205e    program     static                          
+     ___case_228_lbl00059   0x002064    program     static                          
+     ___case_229_lbl00060   0x00206a    program     static                          
+     ___case_230_lbl00061   0x002070    program     static                          
+     ___case_231_lbl00062   0x002076    program     static                          
+     ___case_232_lbl00063   0x00207c    program     static                          
+      ___default_lbl00064   0x002082    program     static                          
+   ___switchexit_lbl00055   0x002086    program     static                          
+        ___while_lbl00065   0x00208c    program     static                          
+        ___while_lbl00066   0x002094    program     static                          
+        ___while_lbl00067   0x00209e    program     static                          
+        ___while_lbl00068   0x0020a6    program     static                          
+       ___return_lbl00054   0x0020b6    program     static                          
+            setBufferSize   0x0020ca    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+             USBCBSuspend   0x0020f4    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+     USBCBWakeFromSuspend   0x0020f6    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+        USBCB_SOF_Handler   0x0020f8    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+        USBCBErrorHandler   0x0020fa    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       USBCBCheckOtherReq   0x0020fc    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+    USBCBStdSetDscHandler   0x002100    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+              USBCBInitEP   0x002102    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+          USBCBSendResume   0x002106    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00214e    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                   __pa_0   0x0021d6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                   __pa_1   0x0021e0    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+       USBCheckCDCRequest   0x0021e8    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                CDCInitEP   0x002284    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+       USBCDCEventHandler   0x0022ca    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+             getsUSBUSART   0x002306    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+              putUSBUSART   0x002384    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+             putsUSBUSART   0x0023a0    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+            putrsUSBUSART   0x0023e2    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+             CDCTxService   0x002426    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_0   0x002508    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_1   0x002522    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_2   0x002532    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_3   0x002544    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_4   0x00255e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_5   0x002568    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_6   0x002570    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_7   0x00257e    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_8   0x00258c    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                   __pa_9   0x00259a    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_10   0x0025a4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_11   0x0025b6    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __pa_12   0x0025c4    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+               device_dsc   0x0025d2    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+        configDescriptor1   0x0025e4    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                    sd000   0x002627    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                    sd001   0x00262b    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                    sd002   0x00265f    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+               USB_CD_Ptr   0x002693    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+               USB_SD_Ptr   0x002695    program     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_descriptors.c
+                _do_cinit   0x00269c    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x0026b6    program     static                          
+                copy_loop   0x00270e    program     static                          
+            copy_one_byte   0x002714    program     static                          
+             done_copying   0x002722    program     static                          
+       ___return_lbl00002   0x002738    program     static                          
+                     done   0x002738    program     static                          
+                   memset   0x00273a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                    jLoop   0x00274e    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+              _2jContinue   0x00275a    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x002764    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                     jEnd   0x00276c    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+            __zero_memory   0x00276e    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               zero_block   0x00277c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   loop_h   0x00277c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                compare_l   0x002784    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   loop_l   0x002786    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 _startup   0x00278e    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x00279e    program     static                          
+       ___return_lbl00001   0x0027a8    program     static                          
+                   __init   0x0027aa    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+               __config_0   0x300000    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_1   0x300001    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_2   0x300002    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_3   0x300003    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_4   0x300005    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_5   0x300006    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               __config_6   0x300008    program     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                  __REMB3   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                     SIGN   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __tmp_0   0x00000b       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  __tmp_0   0x00000b       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                  __tmp_0   0x00000b       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+           USBDeviceState   0x000060       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+   USBActiveConfiguration   0x000061       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+    USBAlternateInterface   0x000062       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+   pBDTEntryEP0OutCurrent   0x000064       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+      pBDTEntryEP0OutNext   0x000066       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+             pBDTEntryOut   0x000068       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              pBDTEntryIn   0x00006e       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+        shortPacketStatus   0x000074       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+     controlTransferState   0x000075       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                  inPipes   0x000076       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                 outPipes   0x00007b       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                     pDst   0x000082       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+             RemoteWakeup   0x000084       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+        USBBusIsSuspended   0x000085       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                USTATcopy   0x000086       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+          endpoint_number   0x000087       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+       BothEP0OutUOWNsSet   0x000088       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+               ep_data_in   0x000089       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              ep_data_out   0x00008c       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBStatusStageTimeoutCounter   0x00008f       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBDeferStatusStagePacket   0x000090       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBStatusStageEnabledFlag1   0x000091       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBStatusStageEnabledFlag2   0x000092       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBDeferINDataStagePackets   0x000093       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+USBDeferOUTDataStagePackets   0x000094       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+               cdc_rx_len   0x000095       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+            cdc_trf_state   0x000096       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  pCDCSrc   0x000097       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                  pCDCDst   0x000099       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+               cdc_tx_len   0x00009b       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+             cdc_mem_type   0x00009c       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+         CDCDataOutHandle   0x00009d       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+          CDCDataInHandle   0x00009f       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+    control_signal_bitmap   0x0000a1       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+              BaudRateGen   0x0000a2       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+dummy_encapsulated_cmd_response   0x0000a6       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+                     prom   0x0000ae       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                curr_byte   0x0000b1       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x0000b3       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x0000b5       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                led_count   0x0000b8       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+               buffer_out   0x000200       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+              delay_count   0x000240       data     static /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                      BDT   0x000400       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+                 SetupPkt   0x000430       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              CtrlTrfData   0x000438       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_device.c
+              cdc_data_tx   0x000500       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+              cdc_data_rx   0x000540       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+              line_coding   0x000580       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+               cdc_notice   0x000587       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/USB/usb_function_cdc.c
+           buffer_pointer   0x0007e0       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                  TMR_LOW   0x0007e2       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                     GAIN   0x0007e3       data     extern /Users/jmzarza/Documents/Tesis/PIC/Firmware/main.c
+                    UFRML   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIR   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIE   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    USTAT   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/zoom_1"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_1"
+        android:visible="true"/>
+    <item
+        android:id="@+id/zoom_2"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_2"
+        android:visible="true"/>
+    <item
+        android:id="@+id/zoom_4"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_4"
+        android:visible="true"/>
+    <item
+        android:id="@+id/zoom_5"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_5"
+        android:visible="true"/>
+    <item
+        android:id="@+id/zoom_8"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_8"
+        android:visible="true"/>
+    <item
+        android:id="@+id/zoom_10"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_10"
+        android:visible="true"/>
+    <item
+        android:id="@+id/zoom_16"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_16"
+        android:visible="true"/>
+    <item
+        android:id="@+id/zoom_32"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_zoom_32"
+        android:visible="true"/>
+
+</menu>

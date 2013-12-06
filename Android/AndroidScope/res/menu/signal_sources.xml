@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/source_internal"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_source_internal"
+        android:visible="true"/>
+    <item
+        android:id="@+id/source_audio"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_source_sound"
+        android:visible="true"/>
+    <item
+        android:id="@+id/source_usb"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_source_usb"
+        android:visible="true"/>
+    <item
+        android:id="@+id/source_arduino"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/menu_source_arduino"
+        android:visible="true"/>
+
+</menu>
