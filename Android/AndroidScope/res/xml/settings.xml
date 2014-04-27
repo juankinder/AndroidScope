@@ -19,7 +19,7 @@
         <EditTextPreference
             android:defaultValue="50"
             android:key="prefRound"
-            android:title="@string/pref_refresh_rate" />
+            android:title="Rounded" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_usb" >
         <EditTextPreference

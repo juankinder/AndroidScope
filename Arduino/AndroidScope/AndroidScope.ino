@@ -5,8 +5,6 @@
 #define cbi(sfr, bit) (_SFR_BYTE(sfr) &= ~_BV(bit))
 #define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
 
-uint8_t low=0, high=0;
-
 const int analogInPin = A0;    // Pin de entrada analogico
 const int chipSelectPin = 10;  // Pin de chip select para el amplificador operacional
 
@@ -19,6 +17,10 @@ const unsigned char PS_32 = (1 << ADPS2) | (1 << ADPS0);
 const unsigned char PS_64 = (1 << ADPS2) | (1 << ADPS1);
 const unsigned char PS_128 = (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
 
+uint8_t high=0;
+uint8_t dc=0;
+float vcc;
+
 void setup() {
   
   configureSPI();
@@ -28,27 +30,39 @@ void setup() {
   
   // Ganancia por defecto = x10
   setGain(0x10);
+  //getVcc();
   configureADC();
   
+  // Inicia la conversion
+  sbi(ADCSRA, ADSC);
+        
   while(true) {
-        // start the conversion
+        // Inicia la conversion
         sbi(ADCSRA, ADSC);
         
         if(Serial.available() > 0) {
           setGain(Serial.read());
         }
 
-        UDR0 = high; //(high << 6) | (low >> 2);
-        // ADSC is cleared when the conversion finishes
+        UDR0 = high; 
+        // ADSC se pone en cero cuando la conversion finalize
         while (bit_is_set(ADCSRA, ADSC));
 
-        // we have to read ADCL first; doing so locks both ADCL
-        // and ADCH until ADCH is read.  reading ADCL second would
-        // cause the results of each conversion to be discarded,
-        // as ADCL and ADCH would be locked when it completed.
-        low  = ADCL;
-        high = ADCH;
+        // Se lee el valor convertido
+        high = ADCH - dc;
     }
+}
+
+void getVcc() {
+  // Se configura el ADC para que utilice la tension de referencia externa,
+  // el resultado este alineado a la izquierda y
+  // se selecciona el canal 0 del ADC.
+  ADMUX = B01111110;
+  
+  sbi(ADCSRA, ADSC);
+  while (bit_is_set(ADCSRA, ADSC));
+  // Se lee el valor convertido
+  vcc =  1.1 * 255 / ADCH;
 }
 
 // Configuracion del ADC
@@ -56,10 +70,24 @@ void configureADC() {
   ADCSRA &= ~PS_128;  // Se eliminan los bits seteados por la libreria de Arduino
   
   ADCSRA |= PS_4;    // Se setea un valor de prescaler 
+  
+  // Set ADEN in ADCSRA (0x7A) to enable the ADC.
+  // Note, this instruction takes 12 ADC clocks to execute
+  //sbi(ADCSRA, ADEN);
+  
+  // Set ADATE in ADCSRA (0x7A) to enable auto-triggering.
+  //sbi(ADCSRA, ADATE);
+  
+  // Clear ADTS2..0 in ADCSRB (0x7B) to set trigger mode to free running.
+  // This means that as soon as an ADC has finished, the next will be
+  // immediately started.
+  //cbi(ADCSRB, ADTS0);
+  //cbi(ADCSRB, ADTS1);
+  //cbi(ADCSRB, ADTS2);
 
-  // set the analog reference (high two bits of ADMUX) and select the
-  // channel (low 4 bits).  this also sets ADLAR (left-adjust result)
-  // to 0 (the default).
+  // Se configura el ADC para que utilice la tension de referencia externa,
+  // el resultado este alineado a la izquierda y
+  // se selecciona el canal 0 del ADC.
   ADMUX = (EXTERNAL << 6) | 1 << 5 | (0 & 0x07);
 }
 
@@ -82,31 +110,40 @@ void loop() {
 // Se envia el valor de ganancia al amplificador operacional programable
 int setGain(byte gain) {
   byte gain_bits = 0;
+  dc = 0;
 
   switch(gain){
     case 0x01:
       gain_bits = B000;
+      //dc = -3;
       break;
     case 0x02:
       gain_bits = B001;
+      //dc = -2;
       break;
     case 0x04:
       gain_bits = B010;
+      //dc = -1;
       break;
     case 0x05:
       gain_bits = B011;
+      //dc = 1;
       break;
     case 0x08:
       gain_bits = B100;
+      //dc = 2;
       break;
     case 0x10:
       gain_bits = B101;
+      //dc = 4;
       break;
     case 0x16:
       gain_bits = B110;
+      //dc = 8;
       break;
     case 0x32:
       gain_bits = B111;
+      //dc = 22;
       break;
     default:
       return GAIN_SETTING_ERROR;
